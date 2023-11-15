@@ -13,11 +13,27 @@
 <body>
 <main class="catalog">
 <header class="catalog__header">
-    <h1 class="catalog__heading">Pokemon catalog</h1>
+    <h1 class="catalog__heading">
+        <span class="catalog__heading--primary">Pokemon
+        </span> catalog
+    </h1>
+    <div class="search">
+        <input type="text" 
+                name="search" 
+                id="search" 
+                class="search__input" 
+                placeholder="Search" 
+                autocomplete="off">
+    <label for="search" class="search__label">Search</label>
+    </div>
 </header>
 <section class="catalog__content" data-content>
-
+    <p class="catalog__info hide" data-info>There are no results</p>
 </section>
+<footer class="catalog__footer">
+    <button class="catalog__button" data-button>Load more</button>
+    <div class="catalog__loader hide" data-loader>Loading...</div>
+</footer>
 </main>
     <script src="./js/index.js"></script>
     <script>
